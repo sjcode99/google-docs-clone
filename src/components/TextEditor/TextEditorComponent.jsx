@@ -4,10 +4,8 @@ import { Editor } from "react-draft-wysiwyg";
 import { convertFromRaw, convertToRaw, EditorState } from "draft-js";
 
 
-const TextEditor = ({ documentName, uniqueId }) => {
-  console.log(documentName, uniqueId);
+const TextEditor = ({ documentName }) => {
   const [editorState, setEditorState] = useState(EditorState.createEmpty());
-  const [data, setData] = useState('')
   // console.log(editorState);
 
   useEffect(() => {
@@ -24,24 +22,6 @@ const TextEditor = ({ documentName, uniqueId }) => {
     localStorage.setItem(documentName, JSON.stringify(raw))
   }, [editorState])
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const docRef = doc(firestore, "userDocs", `${uid}`, "docs", `${uniqueId}`);
-  //     const docSnap = await getDoc(docRef);
-  //     console.log(docSnap);
-
-  //     if (docSnap.exists()) {
-  //       if (docSnap?.data()?.editorState)
-  //         setEditorState(
-  //           EditorState.createWithContent(
-  //             convertFromRaw(docSnap.data()?.editorState)
-  //           )
-  //         );
-  //     }
-  //   };
-  //   fetchData();
-  // },[uniqueId]);
-  // }, [uid, id]);
   return (
     <div className="bg-[#f9f8fa] min-h-screen pb-16">
       <Editor

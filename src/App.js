@@ -1,5 +1,4 @@
 import React from "react";
-import { v4 as uuid } from "uuid";
 import "@material-tailwind/react/tailwind.css";
 
 
@@ -8,14 +7,11 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-d
 import EditorComponent from "./components/Editor/EditorComponent";
 
 const App = () => {
-  const uniqueId = uuid();
-  console.log(uniqueId);
-
   return (
     <>
       <Router>
         <Switch>
-          <Route path="/" exact component={() => <EditorComponent uniqueId={uniqueId}/>} />
+          <Route path="/" exact component={() => <EditorComponent />} />
         </Switch>
       </Router>
     </>
