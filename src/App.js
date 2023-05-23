@@ -2,7 +2,6 @@ import React from "react";
 import { v4 as uuid } from "uuid";
 import "@material-tailwind/react/tailwind.css";
 
-// import './App.css'
 
 // importing react router dom
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
