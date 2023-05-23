@@ -1,0 +1,29 @@
+
+.options{
+    padding: 2px 7px;
+    cursor: pointer;
+  }
+  
+  /* @tailwind components;
+  
+  @layer components {
+    .options {
+      @apply cursor-pointer hover:bg-gray-200 transition duration-100 py-1 px-3 ease-out rounded-md;
+    }
+  } */
+  
+  /* ovrriding css of the draftjs */
+  
+  .rdw-editor-toolbar{
+    background-color: #edf2fa !important;
+    width: 1488px !important;
+    border-radius: 30px !important;
+  }
+  .rdw-option-wrapper{
+    border: 0px !important;
+    background-color: inherit !important;
+    margin: 0 5px !important;
+  }
+  .rdw-option-active{
+    box-shadow:  none !important;
+  }
