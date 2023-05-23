@@ -23,7 +23,7 @@ const TextEditor = ({ documentName }) => {
   }, [editorState])
 
   return (
-    <div className="bg-[#f9f8fa] min-h-screen pb-16">
+    <div className="bg-[#ededed] min-h-screen pb-16">
       <Editor
         editorState={editorState}
         onEditorStateChange={setEditorState}
