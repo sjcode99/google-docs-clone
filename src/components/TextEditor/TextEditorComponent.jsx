@@ -28,8 +28,8 @@ const TextEditor = ({ documentName }) => {
         editorState={editorState}
         onEditorStateChange={setEditorState}
         toolbarClassName="flex sticky top-0 z-50 !justify-center mx-auto shadow-md"
-        editorClassName="mt-6 bg-white p-5 shadow-lg min-h-[1300px] max-w-5xl mx-auto mb-12 border-2 rounded-sm border-gray-300"
-        editorStyle={{ minHeight: "1300px", width: '60%' }}
+        editorClassName="mt-6 bg-white p-5 shadow-lg min-h-[372vh] max-w-5xl mx-auto mb-12 border-2 rounded-sm border-gray-300"
+        editorStyle={{ minHeight: "372vh", width: '80%' }}
       />
     </div>
   );
